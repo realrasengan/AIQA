@@ -47,6 +47,16 @@ const DOC = "example.pdf";
 })();
 ```
 
+## Example
+
+You can use bot.js which is a telegram bot example. You just need to put your keys and a path to a PDF file.
+
+Also, make sure you install the npm.
+
+```
+npm install node-telegram-bot-api
+```
+
 ## What can you use this for
 
 1. Chat Bot (Telegram, Slack, IRC, Webpage, etc.)
