@@ -5,7 +5,6 @@ import { OpenAI } from "langchain/llms";
 import { ChatVectorDBQAChain } from "langchain/chains";
 import { PDFLoader } from "langchain/document_loaders";
 import { ChromaClient } from 'chromadb';
-const chroma_client = new ChromaClient();
 
 class AIQA {
   #loader;
