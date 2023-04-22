@@ -27,7 +27,7 @@ class AIQA {
       this.#pdf = await this.#textSplitter.splitDocuments(this.#docs);
       this.#embeddings = new OpenAIEmbeddings({openAIApiKey: KEY});
       this.#vectorDB = await Chroma.fromDocuments(this.#pdf, this.#embeddings, {});
-      this.#qa = ChatVectorDBQAChain.fromLLM(new OpenAI({openAIApiKey: KEY, temperature:0, model_name:"gpt-3.5-turbo"}), this.#vectorDB, {returnSourceDocuments:true});
+      this.#qa = ChatVectorDBQAChain.fromLLM(new OpenAI({openAIApiKey: KEY, temperature:0, modelName:"gpt-3.5-turbo"}), this.#vectorDB, {returnSourceDocuments:true});
       return this;
     })();
   }
